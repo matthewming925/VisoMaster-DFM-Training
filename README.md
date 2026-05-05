@@ -29,6 +29,24 @@
 - **TensorRT Support**: Leverages supported GPUs for ultra-fast processing  
 - **Many More Advanced Features** 🎉  
 
+## DFM Training Helpers
+
+This fork includes helper scripts for preparing consent-based DeepFaceLab
+workspaces, training/exporting DeepFaceLive-compatible DFM models, and copying
+the exported model into VisoMaster.
+
+Start here:
+
+```text
+tools/dfm_training/README.md
+```
+
+For live-stream settings and hand-over-mouth/nose masking notes, see:
+
+```text
+docs/dfm_training_live_streaming.md
+```
+
 ## Automatic Installation (Windows)
 - For Windows users with an Nvidia GPU, we provide an automatic installer for easy set up. 
 - You can get the installer from the [releases](https://github.com/visomaster/VisoMaster/releases/tag/v0.1.1) page or from this [link](https://github.com/visomaster/VisoMaster/releases/download/v0.1.1/VisoMaster_Setup.exe).

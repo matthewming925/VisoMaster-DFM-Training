@@ -25,6 +25,11 @@ source_images/
 output/
 test_frames*/
 test_videos*/
+dfm_training_runs/
+tools/dfm_training/workspaces/
+*.avi
+*.mkv
+*.mov
 install.dat
 visomaster.ico
 dependencies/CUDA/
@@ -35,3 +40,4 @@ dependencies/TensorRT/
 *.jpg
 *.exe
 .thumbnails
+!tools/dfm_training/*.json

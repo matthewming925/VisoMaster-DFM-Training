@@ -1,0 +1,52 @@
+{
+  "profile_name": "my_pair_live_stream",
+  "workspace": "D:/dfm_workspaces/my_pair_live_stream",
+  "source": {
+    "videos": [
+      "D:/capture/source_identity.mp4"
+    ],
+    "images": [
+      "D:/capture/source_photos"
+    ],
+    "fps": 8
+  },
+  "destination": {
+    "videos": [
+      "D:/capture/streaming_actor.mp4"
+    ],
+    "images": [
+      "D:/capture/target_photos"
+    ],
+    "fps": 8
+  },
+  "frame_extraction": {
+    "ffmpeg": "ffmpeg",
+    "max_width": 1920,
+    "jpeg_quality": 2
+  },
+  "training": {
+    "model_type": "SAEHD",
+    "first_live_resolution": 256,
+    "try_after_stable": [
+      320,
+      384
+    ],
+    "xseg_review_focus": [
+      "hand over mouth",
+      "hand over nose",
+      "fingers crossing lips",
+      "hand on cheek or chin",
+      "hair or glasses occluding face",
+      "microphone or phone near mouth"
+    ]
+  },
+  "visomaster": {
+    "dfm_model_directory": "model_assets/dfm_models",
+    "first_live_test": {
+      "input": "720p30",
+      "face_enhancer": "off",
+      "xseg_or_occlusion_mask": "on",
+      "rct_color": "test on and off"
+    }
+  }
+}
